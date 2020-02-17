@@ -4,7 +4,6 @@
 extern "C" {
 #endif
 #include "apriltag.h"
-#include "zarray.h"
 
 zarray_t* apriltag_family_list();
 struct apriltag_family* apriltag_family_create(const char* family_name);
