@@ -37,8 +37,10 @@ apriltag_family_t* apriltag_family_create(const char* famname) {
 }
 void apriltag_family_destroy(apriltag_family_t *tf) {
   
-   free(tf->name);
    free(tf->codes);
+   free(tf->bit_x);
+   free(tf->bit_y);
+   free(tf->name);
    free(tf);
    
 }
